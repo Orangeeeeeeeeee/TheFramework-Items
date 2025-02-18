@@ -1,0 +1,6 @@
+name: The Framework Items
+version: '1.0.0'
+main: me.mcplugins.theFrameworkItems.TheFrameworkItems
+api-version: '1.21'
+authors: [ Orange ]
+description: The spawn addon for The Framework
