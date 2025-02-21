@@ -1,6 +1,18 @@
-name: The Framework Items
+name: TheFramework-Items
 version: '1.0.0'
 main: me.mcplugins.theFrameworkItems.TheFrameworkItems
+depend: [ TheFramework ]
 api-version: '1.21'
-authors: [ Orange ]
-description: The spawn addon for The Framework
+author: Orange
+description: The items addon for The Framework
+
+commands:
+    get:
+        description: "Get a custom item"
+        usage: "/get <item_name> [amount]"
+        aliases: [ get ]
+        permission: framework.items.get
+
+permissions:
+    framework.items.get:
+        default: op
