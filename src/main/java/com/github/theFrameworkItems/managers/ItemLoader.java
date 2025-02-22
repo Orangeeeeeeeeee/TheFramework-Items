@@ -1,4 +1,4 @@
-package me.mcplugins.theFrameworkItems.managers;
+package com.github.theFrameworkItems.managers;
 
 import me.mcplugins.theframework.TheFramework;
 import me.mcplugins.theframework.managers.EnumManager;

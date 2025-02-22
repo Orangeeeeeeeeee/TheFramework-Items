@@ -1,4 +1,4 @@
-package me.mcplugins.theFrameworkItems.managers;
+package com.github.theFrameworkItems.managers;
 
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;

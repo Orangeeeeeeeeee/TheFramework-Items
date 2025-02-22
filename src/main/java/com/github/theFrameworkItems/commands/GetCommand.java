@@ -1,7 +1,7 @@
-package me.mcplugins.theFrameworkItems.commands;
+package com.github.theFrameworkItems.commands;
 
-import me.mcplugins.theFrameworkItems.managers.CustomItem;
-import me.mcplugins.theFrameworkItems.managers.ItemManager;
+import com.github.theFrameworkItems.managers.CustomItem;
+import com.github.theFrameworkItems.managers.ItemManager;
 import me.mcplugins.theframework.commands.CustomCommand;
 import me.mcplugins.theframework.managers.TextManager;
 import net.kyori.adventure.text.Component;

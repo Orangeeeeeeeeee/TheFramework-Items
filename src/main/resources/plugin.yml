@@ -1,6 +1,6 @@
 name: TheFramework-Items
 version: '1.0.0'
-main: me.mcplugins.theFrameworkItems.TheFrameworkItems
+main: com.github.theFrameworkItems.TheFrameworkItems
 depend: [ TheFramework ]
 api-version: '1.21'
 author: Orange

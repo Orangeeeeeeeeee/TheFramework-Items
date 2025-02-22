@@ -1,8 +1,8 @@
-package me.mcplugins.theFrameworkItems;
+package com.github.theFrameworkItems;
 
-import me.mcplugins.theFrameworkItems.commands.GetCommand;
-import me.mcplugins.theFrameworkItems.managers.ItemListener;
-import me.mcplugins.theFrameworkItems.managers.ItemManager;
+import com.github.theFrameworkItems.commands.GetCommand;
+import com.github.theFrameworkItems.managers.ItemListener;
+import com.github.theFrameworkItems.managers.ItemManager;
 import me.mcplugins.theframework.TheFramework;
 import me.mcplugins.theframework.commands.CommandsManager;
 import me.mcplugins.theframework.managers.TextManager;
