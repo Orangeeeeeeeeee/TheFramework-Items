@@ -1,11 +1,11 @@
 package com.github.theFrameworkItems;
 
+import com.github.theFramework.TheFramework;
+import com.github.theFramework.commands.CommandsManager;
+import com.github.theFramework.managers.TextManager;
 import com.github.theFrameworkItems.commands.GetCommand;
 import com.github.theFrameworkItems.managers.ItemListener;
 import com.github.theFrameworkItems.managers.ItemManager;
-import me.mcplugins.theframework.TheFramework;
-import me.mcplugins.theframework.commands.CommandsManager;
-import me.mcplugins.theframework.managers.TextManager;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;

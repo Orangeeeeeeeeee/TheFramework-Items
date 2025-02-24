@@ -1,6 +1,6 @@
 package com.github.theFrameworkItems.managers;
 
-import me.mcplugins.theframework.managers.TextManager;
+import com.github.theFramework.managers.TextManager;
 import net.kyori.adventure.text.Component;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

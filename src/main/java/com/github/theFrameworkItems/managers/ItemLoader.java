@@ -1,9 +1,9 @@
 package com.github.theFrameworkItems.managers;
 
-import me.mcplugins.theframework.TheFramework;
-import me.mcplugins.theframework.managers.EnumManager;
-import me.mcplugins.theframework.managers.FileReader;
-import me.mcplugins.theframework.managers.TextManager;
+import com.github.theFramework.TheFramework;
+import com.github.theFramework.managers.EnumManager;
+import com.github.theFramework.managers.FileReader;
+import com.github.theFramework.managers.TextManager;
 import net.kyori.adventure.text.Component;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;

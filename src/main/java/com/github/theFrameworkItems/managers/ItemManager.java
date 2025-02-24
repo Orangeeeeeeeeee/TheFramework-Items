@@ -1,7 +1,7 @@
 package com.github.theFrameworkItems.managers;
 
-import me.mcplugins.theframework.TheFramework;
-import me.mcplugins.theframework.managers.TextManager;
+import com.github.theFramework.TheFramework;
+import com.github.theFramework.managers.TextManager;
 import net.kyori.adventure.text.Component;
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Player;

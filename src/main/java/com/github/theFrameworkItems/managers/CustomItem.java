@@ -1,12 +1,12 @@
 package com.github.theFrameworkItems.managers;
 
+import com.github.theFramework.TheFramework;
+import com.github.theFramework.managers.FileReader;
+import com.github.theFramework.managers.Placeholders;
+import com.github.theFramework.managers.TextManager;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 import lombok.Getter;
-import me.mcplugins.theframework.TheFramework;
-import me.mcplugins.theframework.managers.FileReader;
-import me.mcplugins.theframework.managers.Placeholders;
-import me.mcplugins.theframework.managers.TextManager;
 import net.kyori.adventure.text.Component;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;

@@ -1,9 +1,9 @@
 package com.github.theFrameworkItems.commands;
 
+import com.github.theFramework.commands.CustomCommand;
+import com.github.theFramework.managers.TextManager;
 import com.github.theFrameworkItems.managers.CustomItem;
 import com.github.theFrameworkItems.managers.ItemManager;
-import me.mcplugins.theframework.commands.CustomCommand;
-import me.mcplugins.theframework.managers.TextManager;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.Sound;

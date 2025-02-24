@@ -6,7 +6,7 @@
 
     <groupId>com.github.TrulyOrange</groupId>
     <artifactId>TheFramework-Items</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <packaging>jar</packaging>
 
     <name>TheFramework_Items</name>
@@ -83,7 +83,7 @@
         <dependency>
             <groupId>com.github.TrulyOrange</groupId>
             <artifactId>TheFramework</artifactId>
-            <version>1.0.3</version>
+            <version>1.0.5</version>
         </dependency>
     </dependencies>
 </project>
