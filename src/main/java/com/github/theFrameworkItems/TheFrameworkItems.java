@@ -14,24 +14,19 @@ public final class TheFrameworkItems extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
-		if (!TheFramework.asPlugin().isEnabled()) {
-			TextManager.console(TextManager.format("&c[The Framework] Items requires The Framework to be enabled!"));
-			setEnabled(false);
-		}
-
-		TextManager.console(TextManager.format(
-			"&b\n\n" +
-				"  █ ▀█▀ █▀▀ █▀▄▀█ █▀\n" +
-				"  █  █  ██▄ █ ▀ █ ▄█\n" +
-				"              &3v&f1.0.0" +
-				"\n"
-		));
-
 		for (Player player : Bukkit.getOnlinePlayers())
 			ItemManager.reload(player);
 
 		TheFramework.registerEvent(new ItemListener());
 		CommandsManager.register(new GetCommand(), this);
+
+		TextManager.console(TextManager.format(
+			"&b\n\n" +
+				"  █ ▀█▀ █▀▀ █▀▄▀█ █▀\n" +
+				"  █  █  ██▄ █ ▀ █ ▄█\n" +
+				"              &3v&f1.0.4" +
+				"\n"
+		));
 	}
 
 	@Override

@@ -3,6 +3,7 @@ package com.github.theFrameworkItems.managers;
 import com.github.theFramework.TheFramework;
 import com.github.theFramework.managers.TextManager;
 import net.kyori.adventure.text.Component;
+import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
@@ -19,13 +20,12 @@ import java.util.Map;
 public class ItemManager {
 	private static final Map<String, CustomItem> STORAGE = ItemLoader.load();
 
-	public static CustomItem getItem(String id) {
-		return STORAGE.get(id);
-	}
 	public static Map<String, CustomItem> getItems() {
 		return STORAGE;
 	}
-
+	public static CustomItem getItem(String id) {
+		return STORAGE.get(id);
+	}
 	public static CustomItem getItem(ItemStack item) {
 		if (item == null || !item.hasItemMeta()) return null;
 
@@ -34,6 +34,15 @@ public class ItemManager {
 
 		String itemId = data.get(key, PersistentDataType.STRING);
 		return itemId == null ? null : getItem(itemId);
+	}
+	public static ItemStack getItemOrVanilla(String id) {
+		CustomItem customItem = getItem(id);
+		if (customItem != null) return customItem.create(1);
+
+		Material material = Material.matchMaterial(id.toUpperCase());
+		if (material != null)
+			return new ItemStack(material);
+		return null;
 	}
 
 	public static int getFromInventory(Inventory inventory, CustomItem search) {
@@ -52,7 +61,6 @@ public class ItemManager {
 
 		return amount;
 	}
-
 	public static void removeFromInventory(Inventory inventory, CustomItem search, int amount) {
 		for (ItemStack item : inventory.getContents()) {
 			if (item == null || !item.hasItemMeta()) continue;
