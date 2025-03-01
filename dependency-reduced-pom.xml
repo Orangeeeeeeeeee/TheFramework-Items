@@ -4,7 +4,7 @@
   <groupId>com.github.TrulyOrange</groupId>
   <artifactId>TheFramework-Items</artifactId>
   <name>TheFramework_Items</name>
-  <version>1.0.6</version>
+  <version>1.0.7</version>
   <build>
     <defaultGoal>clean package</defaultGoal>
     <resources>
@@ -74,7 +74,7 @@
     <dependency>
       <groupId>com.github.TrulyOrange</groupId>
       <artifactId>TheFramework</artifactId>
-      <version>1.0.6</version>
+      <version>1.0.14</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>

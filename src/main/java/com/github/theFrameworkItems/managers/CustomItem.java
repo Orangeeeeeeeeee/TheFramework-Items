@@ -140,11 +140,12 @@ public class CustomItem {
 
 				if ("%attributes%".equals(line)) {
 					loreLines.addAll(getAttributeText());
-				} else if ("%enchants%".equals(line)) {
+				} else if ("%enchantments%".equals(line)) {
 					loreLines.addAll(getEnchantmentText());
 				} else {
 					String processedLine = Placeholders.apply(line, this, placeholders);
-					if (!processedLine.isEmpty()) loreLines.add(TextManager.format(processedLine));
+					for (String subLine : processedLine.split("\n"))
+						if (!subLine.isEmpty()) loreLines.add(TextManager.format(subLine));
 				}
 			}
 		}
@@ -153,20 +154,26 @@ public class CustomItem {
 	}
 
 	private List<Component> getEnchantmentText() {
-		return enchantments.entrySet().stream()
+		List<Component> enchantLore = enchantments.entrySet().stream()
 			.map(entry -> {
-				String format = getTextFromList(Config.Format.ENCHANTS, Config.Format.ENCHANT_DEFAULT, entry.getKey().getKey().getKey());
-				return TextManager.format(format.replace("%value%", String.valueOf(entry.getValue())));
+				String format = getTextFromList(Config.Format.ENCHANTS, Config.Format.ENCHANTS_DEFAULT, entry.getKey().getKey().getKey());
+				return TextManager.format(format.replace("%level%", String.valueOf(entry.getValue())));
 			})
 			.collect(Collectors.toList());
+
+		if (Config.Format.ENCHANTS_SPACE && !enchantLore.isEmpty()) enchantLore.add(Component.empty());
+		return enchantLore;
 	}
 	private List<Component> getAttributeText() {
-		return attributes.entrySet().stream()
+		List<Component> attributeLore = attributes.entrySet().stream()
 			.map(entry -> {
 				String format = getTextFromList(Config.Format.ATTRIBUTES, Config.Format.ATTRIBUTES_DEFAULT, entry.getKey().toString());
-				return TextManager.format(format.replace("%value%", String.valueOf(entry.getValue())));
+				return TextManager.format(format.replace("%amount%", String.valueOf(entry.getValue())));
 			})
 			.collect(Collectors.toList());
+
+		if (Config.Format.ATTRIBUTES_SPACE && !attributeLore.isEmpty()) attributeLore.add(Component.empty());
+		return attributeLore;
 	}
 
 	private String getRarityText() {
