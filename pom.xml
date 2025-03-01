@@ -6,7 +6,7 @@
 
     <groupId>com.github.TrulyOrange</groupId>
     <artifactId>TheFramework-Items</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <packaging>jar</packaging>
 
     <name>TheFramework_Items</name>
@@ -35,6 +35,19 @@
                     <source>${java.version}</source>
                     <target>${java.version}</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.5.3</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -84,6 +97,7 @@
             <groupId>com.github.TrulyOrange</groupId>
             <artifactId>TheFramework</artifactId>
             <version>1.0.6</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
