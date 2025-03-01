@@ -24,7 +24,7 @@ public final class TheFrameworkItems extends JavaPlugin {
 			"&b\n\n" +
 				"  █ ▀█▀ █▀▀ █▀▄▀█ █▀\n" +
 				"  █  █  ██▄ █ ▀ █ ▄█\n" +
-				"              &3v&f1.0.7" +
+				"              &3v&f1.0.8" +
 				"\n"
 		));
 	}

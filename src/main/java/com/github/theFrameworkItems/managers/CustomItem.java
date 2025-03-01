@@ -144,7 +144,7 @@ public class CustomItem {
 					loreLines.addAll(getEnchantmentText());
 				} else {
 					String processedLine = Placeholders.apply(line, this, placeholders);
-					for (String subLine : processedLine.split("\n"))
+					for (String subLine : processedLine.split("%new_line%"))
 						if (!subLine.isEmpty()) loreLines.add(TextManager.format(subLine));
 				}
 			}
