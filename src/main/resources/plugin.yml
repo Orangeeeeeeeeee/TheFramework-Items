@@ -1,5 +1,5 @@
 name: TheFramework-Items
-version: '1.0.8'
+version: '1.0.9'
 main: com.github.theFrameworkItems.TheFrameworkItems
 depend: [ TheFramework ]
 api-version: '1.21'
